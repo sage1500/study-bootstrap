@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Sample</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <h3>グリッドシステム利用</h3>
+    <form class="row g-1">
+      <!-- Name -->
+      <label for="name" class="form-label col-md-2">Name</label>
+      <div class="col-md-10">
+        <input type="text" class="form-control is-invalid" name="name" placeholder="Jane Doe">
+        <div class="invalid-feedback">
+          入力してください。
+        </div>
+      </div>
+
+      <!-- Email -->
+      <label for="email" class="form-label col-md-2">Email</label>
+      <div class="col-md-10">
+        <input type="email" class="form-control" name="email" placeholder="jane.doe@example.com">
+      </div>
+
+      <!-- Select1 -->
+      <label for="select1" class="form-label col-md-2">Select1</label>
+      <div class="col-md-10">
+        <select class="form-select is-invalid" name="select1">
+          <option selected value="">aaa</option>
+          <option>bbb</option>
+          <option>ccc</option>
+        </select>
+        <div class="invalid-feedback">
+          選択してください。
+        </div>
+      </div>
+
+      <!-- Select2 -->
+      <label for="select2" class="form-label col-md-2">Select2</label>
+      <div class="col-md-10">
+        <select class="form-select" name="select2">
+          <option selected value="">aaa</option>
+          <option>bbb</option>
+          <option>ccc</option>
+        </select>
+      </div>
+
+      <!-- Check0 -->
+      <label for="email" class="form-label col-md-2">Check0</label>
+      <div class="col-md-10">
+        <input class="form-check-input" type="checkbox" value="" id="check0a">
+        <label class="form-check-label" for="check0a">Check0a</label>
+        <input class="form-check-input" type="checkbox" value="" id="check0b">
+        <label class="form-check-label" for="check0b">Check0b</label>
+      </div>
+
+      <!-- Check1 -->
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="check1" required>
+        <label class="form-check-label" for="check1">Check1</label>
+      </div>
+
+      <!-- Check2 -->
+      <div class="form-check">
+        <input class="form-check-input is-invalid" type="checkbox" value="" id="check2" required>
+        <label class="form-check-label" for="check2">Check2</label>
+        <div class="invalid-feedback">
+          チェックしてください。
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn btn-primary col-md-auto">Send</button>
+    </form>
+
+    <hr>
+
+    <h3>テーブル利用</h3>
+    <form>
+      <table>
+        <tr>
+          <td><label for="inputEmail3" class="form-label">Email</label></td>
+          <td><input type="email" class="form-control" id="inputEmail3" placeholder="Email"></td>
+        </tr>
+        <tr>
+          <td><label for="inputPassword3" class="form-label">Password</label></td>
+          <td><input type="password" class="form-control" id="inputPassword3" placeholder="Password"></td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+        </tr>
+      </table>
+      <label>
+        <input type="checkbox" class="form-check-input"> Remember me
+      </label><br>
+      <button class="btn btn-primary">Sign in</button>
+    </form>
+</body>
+
+</html>
